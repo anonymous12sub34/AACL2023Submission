@@ -29,6 +29,7 @@ Run ```python3 embedding.py <EMBEDDING_TYPE> <MODEL_NAME> <MODEL_PATH> <RECIPES_
 Run ```python3 skipclip.py <CONTEXT_STEPS> <MODEL_NAME> <MODEL_PATH> <NUM_RANDOM_STEPS> <TEST>```. Running the command should generate a folder ```models/skipclip_<CONTEXT_STEPS>_<NUM_RANDOM_STEPS>_<USE_CONTRASTIVE>__<MODEL_NAME>``` containing model and log files. 
 
 ## Fine-tuning on SQuAD 2.0
+- Pretrained models need to be finetuned on SQuAD 2.0 dataset before training on the entity-tracking downstream task. 
 - To download the training set, run ```wget https://rajpurkar.github.io/SQuAD-explorer/dataset/train-v2.0.json```.
 - Run ```python3 finetune_squad.py <MODEL_TYPE> <MODEL_PATH>```. 
 - To get the models fine-tuned on SQuAD 2.0, follow the following format to get the link - ```https://huggingface.co/AnonymousSub/<SUBSTRING AFTER THE LAST '/' IN PRE-TRAINED MODEL LINK>_squad2.0```.
