@@ -16,7 +16,7 @@ Before pre-training store your training data as a list of recipes with each reci
 
 ## Pretraining using Permutation Classification
 
-Run ```python3 classification.py <MODEL_NAME> <MODEL_PATH> <RECIPES_STEPS> <TEST> <TOTAL_NUM_PERMUTATIONS>```. Running the command should generate a folder ```models/pc_<RECIPES_STEPS>_<TOTAL_NUM_PERMUTATIONS>__<MODEL_NAME>``` containing model and log files. Link to pretrained model [pc_6_100__roberta](https://huggingface.co/anony12sub34/pc_6_100__roberta)
+Run ```python3 classification.py <MODEL_NAME> <MODEL_PATH> <RECIPES_STEPS> <TEST> <TOTAL_NUM_PERMUTATIONS>```. Running the command should generate a folder ```models/pc_<RECIPES_STEPS>_<TOTAL_NUM_PERMUTATIONS>__<MODEL_NAME>``` containing model and log files. Link to pretrained model [pc_6_100__roberta](https://huggingface.co/anony12sub34/pc_6_100__roberta). 
 
 ## Pretraining using Embedding Regression
 
