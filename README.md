@@ -1,3 +1,3 @@
-# Code for the AACL2023Submission - 'Permutation Based Pre-training Strategies for Procedural Text'
+# Code for the AACL 2023 Submission - 'Permutation Based Pre-training Strategies for Procedural Text'
 
 UNDER CONSTRUCTION
