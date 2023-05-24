@@ -26,7 +26,7 @@ Run ```python3 embedding.py <EMBEDDING_TYPE> <MODEL_NAME> <MODEL_PATH> <RECIPES_
 
 ## Pretraining using Skip-Clip
 
-Run ```python3 skipclip.py <CONTEXT_STEPS> <MODEL_NAME> <MODEL_PATH> <NUM_RANDOM_STEPS> <TEST>```. Running the command should generate a folder ```models/skipclip_<CONTEXT_STEPS>_<NUM_RANDOM_STEPS>_<USE_CONTRASTIVE>__<MODEL_NAME>``` containing model and log files. 
+Run ```python3 skipclip.py <CONTEXT_STEPS> <MODEL_NAME> <MODEL_PATH> <NUM_RANDOM_STEPS> <TEST>```. Running the command should generate a folder ```models/skipclip_<CONTEXT_STEPS>_<NUM_RANDOM_STEPS>__<MODEL_NAME>``` containing model and log files. 
 
 ## Fine-tuning on SQuAD 2.0
 - Pretrained models need to be finetuned on SQuAD 2.0 dataset before training on the entity-tracking downstream task. 
