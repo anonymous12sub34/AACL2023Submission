@@ -35,6 +35,7 @@ MAX_STEP_LEN = 32
 MIN_STEPS_PER_RECIPE = CONTEXT_STEPS + NUM_RANDOM_STEPS
 NUM_DATA = int(1e6) 
 SEED = 0
+USE_CONTRASTIVE = false 
 
 # training 
 ACCUM_ITER = 2
@@ -50,7 +51,7 @@ WARMUP_STEPS = 0
 recipe_corpus_filepath = 'full_corpus.pickle'
 
 # model_name_suffix = f'{CONTEXT_STEPS}_{MIN_STEPS_PER_RECIPE}_{NUM_DATA}_{NUM_RANDOM_STEPS}_{SEED}_{USE_CONTRASTIVE}'
-model_name_suffix = f'{CONTEXT_STEPS}_{NUM_RANDOM_STEPS}_{USE_CONTRASTIVE}'
+model_name_suffix = f'{CONTEXT_STEPS}_{NUM_RANDOM_STEPS}'
 save_model_name = 'rupc_' + model_name_suffix + f'__{MODEL_NAME}' 
 
 if TEST:
