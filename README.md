@@ -25,7 +25,7 @@ Run ```python3 embedding.py <EMBEDDING_TYPE> <MODEL_NAME> <MODEL_PATH> <RECIPES_
 ## Fine-tuning on SQuAD 2.0
 - To download the training set, run ```wget https://rajpurkar.github.io/SQuAD-explorer/dataset/train-v2.0.json```.
 - Run ```python3 finetune_squad.py <MODEL_TYPE> <MODEL_PATH>```. 
-- To get the models fine-tuned on SQuAD 2.0, follow the following format to get the link - https://huggingface.co/AnonymousSub/<SUBSTRING AFTER THE LAST '/' IN PRE-TRAINED MODEL LINK>_squad2.0
+- To get the models fine-tuned on SQuAD 2.0, follow the following format to get the link - ```https://huggingface.co/AnonymousSub/<SUBSTRING AFTER THE LAST '/' IN PRE-TRAINED MODEL LINK>_squad2.0```.
 
 ## Links to Pre-trained models  Fine-tuned on SQuAD 2.0
 
