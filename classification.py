@@ -43,7 +43,7 @@ if TEST:
     print('TESTING')
     LOGGING_STEPS = 1
     NUM_DATA = 100
-    RECIPES_FILE_PATH = 'first_100_recipes.pickle'
+    RECIPES_FILE_PATH = 'full_corpus.pickle'
     SAVE_STRATEGY = 'no'
 
 assert factorial(RECIPES_STEPS)>=TOTAL_NUM_PERMUTATIONS, f"TOTAL_NUM_PERMUTATIONS:{TOTAL_NUM_PERMUTATIONS} is more than factorial(RECIPES_STEPS): {factorial(RECIPES_STEPS)}"
