@@ -11,10 +11,11 @@ Please run ```pip install -r requirements.txt```.
 - RECIPES_STEPS: Number of steps of recipes, or text about any process, in the training data. 
 - TEST: Set 'True' to test code on your local machine ('True', 'False'). 
 - TOTAL_NUM_PERMUTATIONS: Size of the permutation set. 
+Before pre-training store your training data as a list of recipes with each recipe in turn as a list of steps in a pickle file called ```full_corpus.pickle```. 
 
 ## Pretraining using Permutation Classification
 
-Store your data as a list of recipes with each recipe in turn as a list of steps in a pickle file called ```full_corpus.pickle```. Run ```python3 classification.py <MODEL_NAME> <MODEL_PATH> <RECIPES_STEPS> <TEST> <TOTAL_NUM_PERMUTATIONS>```
+Run ```python3 classification.py <MODEL_NAME> <MODEL_PATH> <RECIPES_STEPS> <TEST> <TOTAL_NUM_PERMUTATIONS>```
 
 ## Pretraining using Embedding Regression
 
