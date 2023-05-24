@@ -52,7 +52,7 @@ recipe_corpus_filepath = 'full_corpus.pickle'
 
 # model_name_suffix = f'{CONTEXT_STEPS}_{MIN_STEPS_PER_RECIPE}_{NUM_DATA}_{NUM_RANDOM_STEPS}_{SEED}_{USE_CONTRASTIVE}'
 model_name_suffix = f'{CONTEXT_STEPS}_{NUM_RANDOM_STEPS}'
-save_model_name = 'rupc_' + model_name_suffix + f'__{MODEL_NAME}' 
+save_model_name = 'skipclip_' + model_name_suffix + f'__{MODEL_NAME}' 
 
 if TEST:
     BATCH_SIZE = 2
@@ -61,7 +61,7 @@ if TEST:
     NUM_DATA = 4
     NUM_RANDOM_STEPS = 2
     recipe_corpus_filepath = 'full_corpus.pickle'
-    save_model_name = 'rupc_test'
+    save_model_name = 'skipclip_test'
 
 project_name = save_model_name
 print(f"project_name: {project_name}")
