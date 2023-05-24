@@ -14,7 +14,7 @@ Please run ```pip install -r requirements.txt```.
 - ```TEST:``` Set 'True' to test code on your local machine ('True', 'False'). 
 - ```TOTAL_NUM_PERMUTATIONS:``` Size of the permutation set. 
 
-Before pre-training store your training data as a list of recipes with each recipe in turn as a list of steps in a pickle file called ```full_corpus.pickle```. Running the pretraining code should generate ```permutation_hamming_<RECIPES_STEPS>_<TOTAL_NUM_PERMUTATIONS>.pickle``` file which contains ```TOTAL_NUM_PERMUTATIONS``` permutations of length ```RECIPES_STEPS```. 
+Before pre-training store your training data as a list of recipes with each recipe in turn as a list of steps in a pickle file called ```full_corpus.pickle```. Running the pretraining code for Permutation Classification or Embedding Regression should generate ```permutation_hamming_<RECIPES_STEPS>_<TOTAL_NUM_PERMUTATIONS>.pickle``` file which contains ```TOTAL_NUM_PERMUTATIONS``` permutations of length ```RECIPES_STEPS```. 
 
 ## Pretraining using Permutation Classification
 
