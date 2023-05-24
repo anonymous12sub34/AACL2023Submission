@@ -5,22 +5,22 @@
 Please run ```pip install -r requirements.txt```. 
 
 ## Hyperparameters for commands
-- EMBEDDING_TYPE: Type of embedding ('hamming', 'kenny', 'lehmer'). 
-- MODEL_NAME: Name of the base transformer model/HuggingFace model name ('bert', 'roberta').
-- MODEL_PATH: Path to the base transformer model ('bert-base-uncased', 'roberta-base').
-- RECIPES_STEPS: Number of steps of recipes, or text about any process, in the training data. 
-- TEST: Set 'True' to test code on your local machine ('True', 'False'). 
-- TOTAL_NUM_PERMUTATIONS: Size of the permutation set. 
+- ```EMBEDDING_TYPE:``` Type of embedding ('hamming', 'kenny', 'lehmer'). 
+- ```MODEL_NAME:``` Name of the base transformer model ('bert', 'roberta') or a HuggingFace model which has the transformer model name as a substring ('contra-4-2_bert').
+- ```MODEL_PATH:``` Path to the base transformer model ('bert-base-uncased', 'roberta-base'). 
+- ```RECIPES_STEPS:``` Number of steps of recipes, or text about any process, in the training data. 
+- ```TEST:``` Set 'True' to test code on your local machine ('True', 'False'). 
+- ```TOTAL_NUM_PERMUTATIONS:``` Size of the permutation set. 
 
-Before pre-training store your training data as a list of recipes with each recipe in turn as a list of steps in a pickle file called ```full_corpus.pickle```. 
+Before pre-training store your training data as a list of recipes with each recipe in turn as a list of steps in a pickle file called ```full_corpus.pickle```. Running the pretraining code should generate ```permutation_hamming_<RECIPES_STEPS>_<TOTAL_NUM_PERMUTATIONS>.pickle``` file which contains ```TOTAL_NUM_PERMUTATIONS``` permutations of length ```RECIPES_STEPS```. 
 
 ## Pretraining using Permutation Classification
 
-Run ```python3 classification.py <MODEL_NAME> <MODEL_PATH> <RECIPES_STEPS> <TEST> <TOTAL_NUM_PERMUTATIONS>```
+Run ```python3 classification.py <MODEL_NAME> <MODEL_PATH> <RECIPES_STEPS> <TEST> <TOTAL_NUM_PERMUTATIONS>```. Running the command should generate a folder ```models/pc_<RECIPES_STEPS>_<TOTAL_NUM_PERMUTATIONS>__<MODEL_NAME>``` containing model and log files. 
 
 ## Pretraining using Embedding Regression
 
-Run ```python3 embedding.py <EMBEDDING_TYPE> <MODEL_NAME> <MODEL_PATH> <RECIPES_STEPS> <TEST> <TOTAL_NUM_PERMUTATIONS>```
+Run ```python3 embedding.py <EMBEDDING_TYPE> <MODEL_NAME> <MODEL_PATH> <RECIPES_STEPS> <TEST> <TOTAL_NUM_PERMUTATIONS>```. Running the command should generate a folder ```models/embeddings_<EMBEDDING_TYPE>_<RECIPES_STEPS>_<TOTAL_NUM_PERMUTATIONS>__<MODEL_NAME>``` containing model and log files. 
 
 ## Fine-tuning on SQuAD 2.0
 - To download the training set, run ```wget https://rajpurkar.github.io/SQuAD-explorer/dataset/train-v2.0.json```.
