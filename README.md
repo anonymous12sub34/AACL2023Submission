@@ -12,11 +12,11 @@ Please run ```pip install -r requirements.txt```.
 - ```TEST:``` Set 'True' to test code on your local machine ('True', 'False'). 
 - ```TOTAL_NUM_PERMUTATIONS:``` Size of the permutation set. 
 
-Before pre-training store your training data as a list of recipes with each recipe in turn as a list of steps in a pickle file called ```full_corpus.pickle```. Running the pretraining code should generate ```permutation_hamming_<RECIPES_STEPS>_<TOTAL_NUM_PERMUTATIONS>.pickle``` file which contains ```TOTAL_NUM_PERMUTATIONS``` permutations of length ```RECIPES_STEPS```. Link to pretrained model [pc-6-100-roberta_squad2.0](https://huggingface.co/anony12sub34/pc-6-100-roberta_squad2.0)
+Before pre-training store your training data as a list of recipes with each recipe in turn as a list of steps in a pickle file called ```full_corpus.pickle```. Running the pretraining code should generate ```permutation_hamming_<RECIPES_STEPS>_<TOTAL_NUM_PERMUTATIONS>.pickle``` file which contains ```TOTAL_NUM_PERMUTATIONS``` permutations of length ```RECIPES_STEPS```. 
 
 ## Pretraining using Permutation Classification
 
-Run ```python3 classification.py <MODEL_NAME> <MODEL_PATH> <RECIPES_STEPS> <TEST> <TOTAL_NUM_PERMUTATIONS>```. Running the command should generate a folder ```models/pc_<RECIPES_STEPS>_<TOTAL_NUM_PERMUTATIONS>__<MODEL_NAME>``` containing model and log files. 
+Run ```python3 classification.py <MODEL_NAME> <MODEL_PATH> <RECIPES_STEPS> <TEST> <TOTAL_NUM_PERMUTATIONS>```. Running the command should generate a folder ```models/pc_<RECIPES_STEPS>_<TOTAL_NUM_PERMUTATIONS>__<MODEL_NAME>``` containing model and log files. Link to pretrained model [pc-6-100-roberta_squad2.0](https://huggingface.co/anony12sub34/pc-6-100-roberta_squad2.0)
 
 ## Pretraining using Embedding Regression
 
