@@ -24,12 +24,6 @@ Run ```python3 classification.py <MODEL_NAME> <MODEL_PATH> <RECIPES_STEPS> <TEST
 
 Run ```python3 embedding.py <EMBEDDING_TYPE> <MODEL_NAME> <MODEL_PATH> <RECIPES_STEPS> <TEST> <TOTAL_NUM_PERMUTATIONS>```. Running the command should generate a folder ```models/embeddings_<EMBEDDING_TYPE>_<RECIPES_STEPS>_<TOTAL_NUM_PERMUTATIONS>__<MODEL_NAME>``` containing model and log files. 
 
-CONTEXT_STEPS = int(sys.argv[1]) # [4]
-MODEL_NAME = sys.argv[2] # ['bert']
-MODEL_PATH = sys.argv[3] # ['bert-base-uncased']
-NUM_RANDOM_STEPS = int(sys.argv[4]) # [4]
-TEST = (sys.argv[5]=='True') # [False, True]
-
 ## Pretraining using Skip-Clip
 
 Run ```python3 skipclip.py <CONTEXT_STEPS> <MODEL_NAME> <MODEL_PATH> <NUM_RANDOM_STEPS> <TEST>```. Running the command should generate a folder ```models/skipclip_<CONTEXT_STEPS>_<NUM_RANDOM_STEPS>_<USE_CONTRASTIVE>__<MODEL_NAME>``` containing model and log files. 
