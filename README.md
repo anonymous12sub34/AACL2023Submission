@@ -12,7 +12,7 @@ Please run ```pip install -r requirements.txt```.
 - ```TEST:``` Set 'True' to test code on your local machine ('True', 'False'). 
 - ```TOTAL_NUM_PERMUTATIONS:``` Size of the permutation set. 
 
-Before pre-training store your training data as a list of recipes with each recipe in turn as a list of steps in a pickle file called ```full_corpus.pickle```. Running the pretraining code should generate ```permutation_hamming_<RECIPES_STEPS>_<TOTAL_NUM_PERMUTATIONS>.pickle``` file which contains ```TOTAL_NUM_PERMUTATIONS``` permutations of length ```RECIPES_STEPS```. 
+Before pre-training store your training data as a list of recipes with each recipe in turn as a list of steps in a pickle file called ```full_corpus.pickle```. Running the pretraining code should generate ```permutation_hamming_<RECIPES_STEPS>_<TOTAL_NUM_PERMUTATIONS>.pickle``` file which contains ```TOTAL_NUM_PERMUTATIONS``` permutations of length ```RECIPES_STEPS```. Link to pretrained model [pc-6-100-roberta_squad2.0](https://huggingface.co/anony12sub34/pc-6-100-roberta_squad2.0)
 
 ## Pretraining using Permutation Classification
 
@@ -30,12 +30,11 @@ Run ```python3 embedding.py <EMBEDDING_TYPE> <MODEL_NAME> <MODEL_PATH> <RECIPES_
 ## Links to Pre-trained models  Fine-tuned on SQuAD 2.0
 
 - Permutation Classification
-1. [pc-6-2-roberta_squad2.0](https://huggingface.co/amazonqa1029/pc-6-2-roberta_squad2.0)
-2. [pc-6-50-roberta_squad2.0](https://huggingface.co/amazonqa1029/pc-6-50-roberta_squad2.0)
-3. [pc-6-200-roberta_squad2.0](https://huggingface.co/amazonqa1029/pc-6-200-roberta_squad2.0)
+1. [pc-6-50-roberta_squad2.0](https://huggingface.co/anony12sub34/pc-6-50-roberta_squad2.0)
+2. [pc-6-200-roberta_squad2.0](https://huggingface.co/anony12sub34/pc-6-200-roberta_squad2.0)
 - Embedding Regression
-1. [embeddings-lehmer-6-50-roberta_squad2.0](https://huggingface.co/amazonqa1029/embeddings-lehmer-6-50-roberta_squad2.0)
-2. [embeddings-hamming-6-50-roberta_squad2.0](https://huggingface.co/amazonqa1029/embeddings-hamming-6-50-roberta_squad2.0)
-3. [embeddings-hamming-6-100-roberta_squad2.0](https://huggingface.co/amazonqa1029/embeddings-hamming-6-100-roberta_squad2.0)
+1. [embeddings-lehmer-6-50-roberta_squad2.0](https://huggingface.co/anony12sub34/embeddings-lehmer-6-50-roberta_squad2.0)
+2. [embeddings-hamming-6-50-roberta_squad2.0](https://huggingface.co/anony12sub34/embeddings-hamming-6-50-roberta_squad2.0)
+3. [embeddings-hamming-6-100-roberta_squad2.0](https://huggingface.co/anony12sub34/embeddings-hamming-6-100-roberta_squad2.0)
 - Skip-Clip
-1. [skipclip-4-4-roberta_squad2.0](https://huggingface.co/amazonqa1029/skipclip-4-4-roberta_squad2.0)
+1. [skipclip-4-4-roberta_squad2.0](https://huggingface.co/anony12sub34/skipclip-4-4-roberta_squad2.0)
