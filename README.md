@@ -5,9 +5,11 @@
 Please run ```pip install -r requirements.txt```. 
 
 ## Hyperparameters for commands
+- ```CONTEXT_STEPS:``` Number of steps to be used as the context. 
 - ```EMBEDDING_TYPE:``` Type of embedding ('hamming', 'kenny', 'lehmer'). 
 - ```MODEL_NAME:``` Name of the base transformer model ('bert', 'roberta') or a HuggingFace model which has the transformer model name as a substring ('contra-4-2_bert').
 - ```MODEL_PATH:``` Path to the base transformer model ('bert-base-uncased', 'roberta-base'). 
+- ```NUM_RANDOM_STEPS:``` Number of random steps to be sampled. 
 - ```RECIPES_STEPS:``` Number of steps of recipes, or text about any process, in the training data. 
 - ```TEST:``` Set 'True' to test code on your local machine ('True', 'False'). 
 - ```TOTAL_NUM_PERMUTATIONS:``` Size of the permutation set. 
@@ -21,6 +23,16 @@ Run ```python3 classification.py <MODEL_NAME> <MODEL_PATH> <RECIPES_STEPS> <TEST
 ## Pretraining using Embedding Regression
 
 Run ```python3 embedding.py <EMBEDDING_TYPE> <MODEL_NAME> <MODEL_PATH> <RECIPES_STEPS> <TEST> <TOTAL_NUM_PERMUTATIONS>```. Running the command should generate a folder ```models/embeddings_<EMBEDDING_TYPE>_<RECIPES_STEPS>_<TOTAL_NUM_PERMUTATIONS>__<MODEL_NAME>``` containing model and log files. 
+
+CONTEXT_STEPS = int(sys.argv[1]) # [4]
+MODEL_NAME = sys.argv[2] # ['bert']
+MODEL_PATH = sys.argv[3] # ['bert-base-uncased']
+NUM_RANDOM_STEPS = int(sys.argv[4]) # [4]
+TEST = (sys.argv[5]=='True') # [False, True]
+
+## Pretraining using Skip-Clip
+
+Run ```python3 skipclip.py <CONTEXT_STEPS> <MODEL_NAME> <MODEL_PATH> <NUM_RANDOM_STEPS> <TEST>```. Running the command should generate a folder ```models/skipclip_<CONTEXT_STEPS>_<NUM_RANDOM_STEPS>_<USE_CONTRASTIVE>__<MODEL_NAME>``` containing model and log files. 
 
 ## Fine-tuning on SQuAD 2.0
 - To download the training set, run ```wget https://rajpurkar.github.io/SQuAD-explorer/dataset/train-v2.0.json```.
