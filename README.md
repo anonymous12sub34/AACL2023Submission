@@ -14,7 +14,7 @@ Please run ```pip install -r requirements.txt```.
 
 ## Pretraining using Permutation Classification
 
-Run ```python3 classification.py <MODEL_NAME> <MODEL_PATH> <RECIPES_STEPS> <TEST> <TOTAL_NUM_PERMUTATIONS>```
+Store your data as a list of recipes with each recipe in turn as a list of steps in a file called full_corpus.pickle. Run ```python3 classification.py <MODEL_NAME> <MODEL_PATH> <RECIPES_STEPS> <TEST> <TOTAL_NUM_PERMUTATIONS>```
 
 ## Pretraining using Embedding Regression
 
