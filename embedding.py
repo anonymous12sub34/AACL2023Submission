@@ -45,7 +45,7 @@ if TEST:
     print('TESTING')
     LOGGING_STEPS = 1
     NUM_DATA = 20
-    RECIPES_FILE_PATH = 'first_100_recipes.pickle'
+    RECIPES_FILE_PATH = 'full_corpus.pickle'
     SAVE_STRATEGY = 'no'
     TRAIN_BATCH_SIZE = 8
 
